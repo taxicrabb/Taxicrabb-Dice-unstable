@@ -11,8 +11,8 @@ Hooks.on('diceSoNiceReady', (dice3d) => {
  	dice3d.addTexture("Cherryblossom", {
 	    name: "🦀 Cherryblossom",
 	    composite: "multiply",
-	    source: "modules/taxicrabb-dice/textures/CherryBlossomB2.webp",
-        bump: "modules/taxicrabb-dice/textures/CherryBlossomB.webp"
+	    source: "modules/taxicrabb-dice/textures/CherryBlossomdiff.webp",
+        bump: "modules/taxicrabb-dice/textures/CherryBlossomb2.webp"
 	});
 
  	dice3d.addTexture("Cherryblossom2", {
@@ -27,6 +27,22 @@ Hooks.on('diceSoNiceReady', (dice3d) => {
 	    source: "modules/taxicrabb-dice/textures/sparklecore.webp",
         bump: "modules/taxicrabb-dice/textures/sparklecore.webp"
 	});
+
+ 	dice3d.addTexture("Sparklecore metal", {
+	    name: "🦀 Sparklecore metal",
+	    composite: "multiply",
+	    source: "modules/taxicrabb-dice/textures/sparklecore.webp",
+        bump: "modules/taxicrabb-dice/textures/sparklecore.webp"
+	});
+	    .then(() => {
+      dice3d.addColorset({
+        name: 'Sparklecore metal',
+        description: "🦀 Sparklecore metal",
+        background: "#3b3c50",
+		material: 'metal',
+		outline: '#260000',
+      },"default");
+    });
 	
   dice3d.addSystem({id:"Rollplayer1",name:"🦀 Rollplayer1 (d20, 20 best)"},false);
 
