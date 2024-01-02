@@ -126,7 +126,7 @@ Hooks.on('diceSoNiceReady', (dice3d) => {
   dice3d.addDicePreset({
     type:"d20",
     labels:[
-      '1','2','3','4','5','6','7','modules/taxicrabb-dice/faces/drago/Raven2d20.webp','9','10','11','12','13','14','15','16','17','18','19',
+      '1','2','3','4','5','6','7','modules/taxicrabb-dice/faces/drago/Dragod20-8.webp','9','10','11','12','13','14','15','16','17','18','19',
       '20'
     ],
     system:"Drago"
