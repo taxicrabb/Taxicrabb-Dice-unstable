@@ -121,4 +121,14 @@ Hooks.on('diceSoNiceReady', (dice3d) => {
     system:"Raven2"
   });
 	
+  dice3d.addSystem({id:"Drago",name:"🦀 Drago (d20)"},false);
+
+  dice3d.addDicePreset({
+    type:"d20",
+    labels:[
+      '1','2','3','4','5','6','7','modules/taxicrabb-dice/faces/drago/Raven2d20.webp','9','10','11','12','13','14','15','16','17','18','19',
+      '20'
+    ],
+    system:"Drago"
+  });
 });
